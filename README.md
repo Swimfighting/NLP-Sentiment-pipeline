@@ -19,6 +19,6 @@ I will upload the main pipeline script to demonstrate how to use the package.
 
 ## About the Author
 
-I am from Taiwan and currently an undergraduate student at the University of Nottingham, majoring in Statistics. I am expected to graduate in June 2027. This project is part of my preparation for applying to PhD programs.
+I am from Taiwan and currently an undergraduate student at the University of Nottingham, majoring in Statistics. This project is part of my preparation for applying data analysis and machine learning skills to real-world problems.
 
 I built this project to demonstrate my ability to self-learn NLP techniques and construct sentiment analysis workflows.
