@@ -1,24 +1,42 @@
-# NLP-Sentiment-pipeline
-This project focuses on NLP-based sentiment classification, specifically applied to the IMDB movie review dataset(kaggle source: https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows), with the goal of determining whether a review expresses a positive or negative sentiment.
+# NLP Sentiment Classification
 
-## Features
+This is a personal NLP project based on the IMDB movie review dataset. The aim is to classify movie reviews as positive or negative using different machine learning models.
 
-All features are implemented in Package_IMDB.py:
-- Dataset: IMDB movie reviews (binary sentiment)
-- Text preprocessing: Cleaning, stopword removal, stemming, WordNet lemmatization, word frequency analysis
-- Feature extraction: TF-IDF
-- Dimensionality reduction: PCA
-- Classification models: Random Forest, SVM, Gaussian Naive Bayes
-- Model persistence: model saving and loading using Pickle
+I started this project while learning about natural language processing and wanted to try applying what I had learnt to a real dataset.
 
-## Project Status
+## What I Did
 
-This is an earlier project that I recently revisited and improved before uploading it to GitHub.
-The core package file has been uploaded.
-I will upload the main pipeline script to demonstrate how to use the package.
+The project mainly consists of three parts:
 
-## About the Author
+**1. Text Preprocessing**
 
-I am from Taiwan and currently an undergraduate student at the University of Nottingham, majoring in Statistics. This project is part of my preparation for applying data analysis and machine learning skills to real-world problems.
+I used Python and NLTK to clean the reviews, remove stopwords, and apply stemming and lemmatisation. I also included some basic word frequency analysis.
 
-I built this project to demonstrate my ability to self-learn NLP techniques and construct sentiment analysis workflows.
+**2. Feature Extraction**
+
+Since machine learning models cannot directly process raw text, I used Bag-of-Words and TF-IDF to convert the reviews into numerical features. I also experimented with PCA for dimensionality reduction.
+
+**3. Model Training**
+
+I implemented three classification models:
+
+- Random Forest
+- Support Vector Machine (SVM)
+- Gaussian Naive Bayes
+
+I used GridSearchCV to search for suitable hyperparameters and evaluated the models using precision, recall and F1-score.
+
+## Code
+
+The project contains two main Python files:
+
+- `Maincode.py` – the main script for running the analysis and training the models.
+- `Package_IMDB.py` – contains the functions for text preprocessing, feature extraction and model training.
+
+The code uses Python with libraries including Pandas, NLTK and Scikit-learn.
+
+## About This Project
+
+This was one of my earlier machine learning projects. At the time, I was particularly interested in NLP and wanted to understand how a complete text classification process worked, from preparing the data to training and evaluating models.
+
+I have since revisited the code and uploaded it to GitHub as a record of what I learnt.
