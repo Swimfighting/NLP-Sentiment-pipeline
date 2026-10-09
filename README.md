@@ -4,6 +4,8 @@ This is a personal NLP project based on the IMDB movie review dataset. The aim i
 
 I started this project while learning about natural language processing and wanted to try applying what I had learnt to a real dataset.
 
+**Dataset:** [IMDB Dataset of 50K Movie Reviews (Kaggle)](https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews)
+
 ## What I Did
 
 The project mainly consists of three parts:
