@@ -28,6 +28,37 @@ I implemented three classification models:
 
 I used GridSearchCV to search for suitable hyperparameters and evaluated the models using precision, recall and F1-score.
 
+## Results
+
+For this experiment, I randomly selected 2,000 reviews from the IMDB dataset, with 1,000 positive and 1,000 negative reviews. I used 80% of the data for training and 20% for testing.
+
+I compared three machine learning models using both stemming and lemmatisation. The models were evaluated using five-fold cross-validation and a separate test set. I also used a scikit-learn Pipeline to ensure that feature extraction and PCA were fitted only on the training data during cross-validation and testing.
+
+### Model Performance
+
+The table below shows the accuracy of each model on the test set.
+
+| Model | Stemming | Lemmatisation |
+|---|---|---|
+| Random Forest | 69.50% | 67.75% |
+| Gaussian Naive Bayes | 50.75% | 49.50% |
+| SVM | **82.50%** | **80.75%** |
+
+SVM performed the best among the three models, achieving 82.5% test accuracy with stemming.
+
+For this model, the evaluation metrics were:
+
+| Metric | Score |
+|---|---|
+| Accuracy | 82.50% |
+| Precision (weighted) | 82.53% |
+| Recall (weighted) | 82.50% |
+| F1-score (weighted) | 82.50% |
+
+I also compared the most frequent words in positive and negative reviews after stemming and lemmatisation.
+
+These results are based on a sample of 2,000 reviews rather than the full dataset, so they should be treated as results from this experiment rather than the overall performance of the models on IMDB reviews.
+
 ## Code
 
 The project contains two main Python files:
